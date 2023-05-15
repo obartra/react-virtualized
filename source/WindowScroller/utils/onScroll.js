@@ -1,6 +1,3 @@
-// @flow
-'no babel-plugin-flow-react-proptypes';
-
 import {
   requestAnimationTimeout,
   cancelAnimationTimeout,

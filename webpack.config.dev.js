@@ -26,7 +26,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader?modules', 'postcss-loader'],
+        use: [
+          'style-loader',
+          {loader: 'css-loader', options: {modules: true}},
+          'postcss-loader',
+        ],
         include: path.join(__dirname, 'source'),
       },
       {
